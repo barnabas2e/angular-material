@@ -1,0 +1,17 @@
+.button-sect {
+    display: flex;
+    justify-content: space-between; 
+    width: 850px;
+    padding-top: 1rem;
+}
+button {
+    margin: 1rem;
+}
+a {
+    margin: 1rem;
+}
+.flex-container-example {
+    display: flex;
+    justify-content: space-between; 
+    width: 850px;  
+}
