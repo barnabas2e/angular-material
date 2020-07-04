@@ -1,5 +1,4 @@
-.button-sect {
-    display: flex;
+.button-section {
     justify-content: space-between; 
     width: 850px;
     padding-top: 1rem;
@@ -10,8 +9,18 @@ button {
 a {
     margin: 1rem;
 }
-.flex-container-example {
+.icon-section{
     display: flex;
     justify-content: space-between; 
-    width: 850px;  
+    width: 640px;  
+}
+
+.menu-button {
+    justify-content: space-between;
+    width: 850px;
+    padding-top: 1rem;
+}
+
+.center {
+    margin: 10rem;
 }

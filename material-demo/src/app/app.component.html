@@ -1,4 +1,4 @@
-<div class='button-sect'>
+<div class='button-section'>
   <button mat-raised-button color="primary"  >Click Me</button>
   <button mat-raised-button color="accent">Basic</button>
   <button mat-button color="warn">Submit</button>
@@ -7,7 +7,7 @@
   <a mat-flat-button color="primary" href="https://facebook.com">Facebook</a>
 </div>
 
-<div class='flex-container-example'>
+<div class='icon-section'>
   <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
     <mat-icon>more_vert</mat-icon>
   </button>
@@ -23,5 +23,38 @@
   <button mat-icon-button disabled aria-label="Example icon button with a open in new tab icon">
     <mat-icon>open_in_new</mat-icon>
   </button>
-
 </div>
+
+<!--Basic Menu-->
+<div class='menu-button'>
+  <mat-menu #appMenu="matMenu" xPosition="after" yPosition="below">
+    <button mat-menu-item  [matMenuTriggerFor]="frontEndSubMenu">
+      FrontEnd
+    </button>
+    <button mat-menu-item [matMenuTriggerFor]="backEndSubMenu">
+      BackEnd
+    </button>
+  </mat-menu>
+
+  <button id="menu"
+   mat-icon-button 
+   [matMenuTriggerFor]="appMenu">
+    <mat-icon>menu</mat-icon>
+  </button>
+
+<!--Nested Menu or sub-menu-->
+<mat-menu #frontEndSubMenu="matMenu">
+  <button mat-menu-item> Angular </button>
+  <button mat-menu-item> React </button>
+  <button mat-menu-item> Vue </button>
+</mat-menu>
+
+<mat-menu #backEndSubMenu="matMenu">
+  <button mat-menu-item> Java </button>
+  <button mat-menu-item> C# </button>
+  <button mat-menu-item> Kotlin </button>
+</mat-menu>
+</div>
+
+
+
